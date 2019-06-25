@@ -1,0 +1,5 @@
+<div>
+  <tr *ngFor="let noticia of genrenciador.listaNoticias()">
+    <td *ngIf="noticia.publicada" (click)="genrenciador.visualizou(noticia.id)"><a href="noticia/{{ noticia.id }}">{{ noticia.titulo }}s</a></td>
+  </tr>
+</div>
